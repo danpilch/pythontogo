@@ -1,0 +1,36 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
+<link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/solarized-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8"
+         src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/languages/go.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<h1>Python to Go</h1>
+
+{% for key, value in groups.items() %}
+<h3>{{ value.yaml.title }}</h3>
+<p>{{ value.yaml.description }}</p>
+<table>
+  <thead>
+    <tr>
+      <th>Python</th>
+      <th>Go</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td><pre><code>{{ value.python }}</code></pre></td>
+        <td><pre><code>{{ value.golang }}</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+{% endfor %}
+</html>
+
+

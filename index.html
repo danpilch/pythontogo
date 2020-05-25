@@ -11,10 +11,63 @@
 </head>
 <body>
 <h1>Python to Go</h1>
-<pre><code >
-package main
 
-import "fmt"
+
+<h3>helloworld</h3>
+<p>Basic helloworld example</p>
+<table>
+  <thead>
+    <tr>
+      <th>Python</th>
+      <th>Go</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td><pre><code>def main():
+    print(&#34;helloworld!&#34;)
+
+if __name__ == &#34;__main__&#34;:
+    main()
+</code></pre></td>
+        <td><pre><code>package main
+
+import &#34;fmt&#34;
+
+func main() {
+	fmt.Println(&#34;helloworld!&#34;)
+}
+</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h3>split</h3>
+<p>simple split</p>
+<table>
+  <thead>
+    <tr>
+      <th>Python</th>
+      <th>Go</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td><pre><code>def split(sum):
+    x = sum * 4 / 9
+    y = sum - x
+    return x, y
+
+def main():
+    print(split(17))
+
+if __name__ == &#34;__main__&#34;:
+    main()
+</code></pre></td>
+        <td><pre><code>package main
+
+import &#34;fmt&#34;
 
 func split(sum int) (x, y int) {
 	x = sum * 4 / 9
@@ -25,6 +78,12 @@ func split(sum int) (x, y int) {
 func main() {
 	fmt.Println(split(17))
 }
-</code></pre>
+</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+
 </html>
+
 

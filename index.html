@@ -1,16 +1,29 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
+<link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8"
+         src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/languages/go.min.js"></script>
 </head>
 <body>
 <h1>Python to Go</h1>
-    <h3>Code</h3>
-    <p>
-      Below is some code, with a variable, you can copy it with
-      <kbd>Ctrl-C</kbd>. Did you know, <code>alert(1)</code> can show an alert
-      in JavaScript!
-    </p>
-    <code>var <var>myNumber</var> = 0;</code>
+<pre><code class="go">
+package main
 
+import "fmt"
+
+func split(sum int) (x, y int) {
+	x = sum * 4 / 9
+	y = sum - x
+	return
+}
+
+func main() {
+	fmt.Println(split(17))
+}
+</code></pre>
 </html>
 

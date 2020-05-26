@@ -43,6 +43,60 @@ func main() {
 </table>
 
 
+<h3>array</h3>
+<p>Creating and modifying basic array types</p>
+<table>
+  <thead>
+    <tr>
+      <th>Python</th>
+      <th>Go</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td><pre><code># Create a new list
+python_list = [1, 2, 3]
+
+# Print list
+print(python_list)
+#[1, 2, 3]
+
+# Add to list
+python_list.append(4)
+#[1, 2, 3, 4]
+
+# Iterate over list
+for i in python_list:
+    print(i)
+
+
+</code></pre></td>
+        <td><pre><code>package main
+
+import &#34;fmt&#34;
+
+func main() {
+	// Create a new array
+	go_array := []int{1, 2, 3}
+
+	// Print array
+	fmt.Println(go_array)
+	//[1 2 3]
+
+	// Add to array
+	go_array = append(go_array, 4)
+	//[1 2 3 4]
+
+	for _, v := range go_array {
+		fmt.Println(v)
+	}
+}
+</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+
 </html>
 
 
